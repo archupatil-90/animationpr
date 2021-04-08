@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width:100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg ,pink ,#5395eb51);
+    
+
+}
+.logo{
+    width:200px;
+    margin-left: 70px;
+    box-sizing: border-box;
+    animation: movedown 1s linear 1;
+    visibility: hidden;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+.logo img{
+    width: 100px;
+}
+
+@keyframes movedown{
+    0%{
+        transform:translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+
+}
+nav{
+    width:60%;
+    box-sizing: border-box;
+    padding-top: 10px;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+ul li{  text-align: center;
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: capitalize;
+    font-size: 2rem;
+    animation: movedown 1s linear 1;
+    visibility: hidden;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+}
+.cart{
+   
+    margin-right: 70px;
+    padding-top: 10px;
+   
+    box-sizing: border-box;
+    font-size: 2rem;
+    animation: movedown 1s linear 1;
+    visibility: hidden;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+}
+.cart i{
+    background:-webkit-linear-gradient(35deg ,#5395eb51,rgb(218, 120, 136) ); 
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(35deg ,#5395eb51,rgb(218, 120, 136) );
+    height: 68vh;
+    padding-bottom: 100px;
+
+}
+
+.social{
+    margin-left: 70px;
+    box-sizing: border-box;
+    margin-top: 20%;
+    transform: rotate(-90deg);
+    position: relative;
+    animation: movetop 1s linear 1;
+    visibility: hidden;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes movetop{
+    0%{
+        bottom: -100px;
+        visibility: visible;
+    }
+    100%{
+        bottom: 50px;
+        visibility: visible;
+        color: #8f102d;
+
+        
+    }
+}
+
+.content{
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 15%;
+    animation: moveright 1s linear 1;
+    visibility: hidden;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    
+
+
+
+}
+
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+h1{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+p{
+    font-size: 15px;
+}
+
+.feature-img{
+width: 38%;
+height: 55vh;
+margin-top: 10%;
+
+margin-right: 10%;
+box-sizing: border-box;
+background-image: url(https://st.depositphotos.com/1428083/2946/i/600/depositphotos_29460297-stock-photo-bird-cage.jpg);
+background-size: cover;
+animation: zoomout 1s linear 1;
+visibility: hidden;
+animation-delay: 6s;
+animation-fill-mode: forwards;
+
+
+}
+@keyframes zoomout{
+    0%{
+        transform: scale(.5);
+        visibility: visible;
+        
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
